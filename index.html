@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Interactive Website</h1>
+        <button id="theme-toggle">🌙 Switch Theme</button>
+    </header>
+
+    <main>
+        <!-- Interactive Section 1: Character Counter -->
+        <section class="interactive">
+            <h2>Leave a Comment</h2>
+            <textarea id="comment" maxlength="150" placeholder="Type your comment..."></textarea>
+            <p id="char-count">150 characters remaining</p>
+        </section>
+
+        <!-- Interactive Section 2: Contact Form -->
+        <section class="form-section">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-control">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" />
+                    <small class="error"></small>
+                </div>
+
+                <div class="form-control">
+                    <label for="email">Email Address:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email" />
+                    <small class="error"></small>
+                </div>
+
+                <div class="form-control">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message"></textarea>
+                    <small class="error"></small>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+            <p id="form-success" class="success"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Interactive Web Project | Designed by Ruth Lelei</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
